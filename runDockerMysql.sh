@@ -1,0 +1,1 @@
+pintaole$ docker run -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=employeedb -p 3306:3306 -d mysql

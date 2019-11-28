@@ -28,28 +28,28 @@ public class IntegrationtestApplication {
         SpringApplication.run(IntegrationtestApplication.class, args);
     }
 
-    @Bean
-    public CommandLineRunner commandlineRunner(EmployeeRepository employeeRepository) throws Exception {
+//    @Bean
+//    public CommandLineRunner commandlineRunner(EmployeeRepository employeeRepository) throws Exception {
+//
+//        return args -> {
+//            employeeRepository.deleteAllInBatch();
+//            ArrayList<Employee> employees = new ArrayList<>();
+//            employees.add(createEmployee("First", "Last"));
+//            employees.add(createEmployee("Mr.", "Frost"));
+//            employees.add(createEmployee("Santa", "Clause"));
+//            employees.add(createEmployee("Peter", "Pan"));
+//            employees.add(createEmployee("Cinder", "ella"));
+//            employees.add(createEmployee("What", "ever"));
+//            employeeRepository.saveAll(employees);
+//        };
+//    }
 
-        return args -> {
-            employeeRepository.deleteAllInBatch();
-            ArrayList<Employee> employees = new ArrayList<>();
-            employees.add(createEmployee("First", "Last"));
-            employees.add(createEmployee("Mr.", "Frost"));
-            employees.add(createEmployee("Santa", "Clause"));
-            employees.add(createEmployee("Peter", "Pan"));
-            employees.add(createEmployee("Cinder", "ella"));
-            employees.add(createEmployee("What", "ever"));
-            employeeRepository.saveAll(employees);
-        };
-    }
-
-    private Employee createEmployee(String firstName, String lastName) {
-        Employee employee = new Employee();
-        employee.setFirstName(firstName);
-        employee.setLastName(lastName);
-        return employee;
-    }
+//    private Employee createEmployee(String firstName, String lastName) {
+//        Employee employee = new Employee();
+//        employee.setFirstName(firstName);
+//        employee.setLastName(lastName);
+//        return employee;
+//    }
 
 
 }
