@@ -48,7 +48,7 @@ public class MysqlExampleUsingTestProperties {
   @ClassRule
   public static GenericContainer mysql = new GenericContainer(new ImageFromDockerfile("mysql-employee")
       .withDockerfileFromBuilder(dockerfileBuilder -> {
-        dockerfileBuilder.from("mysql:5.7.8")
+        dockerfileBuilder.from("mysql") // dockerfileBuilder.from("mysql:5.7.8")
             .env("MYSQL_ROOT_PASSWORD", "root")
             .env("MYSQL_DATABASE", "employeedb")
             .env("MYSQL_USER", "user")
