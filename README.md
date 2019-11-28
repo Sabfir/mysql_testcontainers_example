@@ -9,7 +9,7 @@ Technologies used:
 
 This is the example of MySql running in testcontainers for tests.
 
-_ Note: for the PostgreSql see tutorial at: http://localhost:4000/spring-boot-integration-testing-done-right/ _
+*Note: for the PostgreSql see tutorial at: http://localhost:4000/spring-boot-integration-testing-done-right/*
 
 It is a showcase for leveraging the power of Docker, Testcontainers and RestAssured to properly Integration Test a Spring Boot 2 Application.
 
